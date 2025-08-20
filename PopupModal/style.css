@@ -1,0 +1,10 @@
+.modal-ui {
+  width: 50%;
+  height: 50%;
+  background-color: grey;
+  border: 1px solid;
+  position: absolute;
+  top: 20px;
+  left: 100px;
+  right: 50px;
+}
