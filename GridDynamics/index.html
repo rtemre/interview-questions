@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .parent {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+        gap: 10px; /* space between items */
+        padding: 10px;
+      }
+
+      .child {
+        background-color: aqua;
+        padding: 20px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 8px;
+      }
+
+      /* Responsive: auto-fit makes it adapt */
+      @media (max-width: 768px) {
+        .parent {
+          grid-template-columns: repeat(2, 1fr); /* 2 per row on tablets */
+        }
+      }
+
+      @media (max-width: 480px) {
+        .parent {
+          grid-template-columns: 1fr; /* 1 per row on mobile */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+    <div class="parent">
+      <div class="child">1</div>
+      <div class="child">2</div>
+      <div class="child">3</div>
+      <div class="child">4</div>
+      <div class="child">5</div>
+      <div class="child">6</div>
+      <div class="child">7</div>
+      <div class="child">8</div>
+    </div>
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
