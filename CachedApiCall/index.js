@@ -65,3 +65,15 @@ setTimeout(() => {
     console.log("3", a)
   );
 }, 1700);
+
+// ⚠ Problems in Your Code
+
+// Cache key is wrong
+// cache[result] = null;
+// Correct: cache by URL (and data if needed).
+
+// Cache invalidation wrong
+// if (diff > delay) {
+//   cache[result] = null;
+// }
+// Should be delete cache[url]. Otherwise it never properly expires.
